@@ -8,5 +8,9 @@ sealed class ChatState {
 }
 
 class ChatInitial extends ChatState {
-  ChatInitial(List<Message> messages) : super(messages: []);
+  ChatInitial(List<Message> messages) : super(messages: messages);
+}
+
+class ScrollToEnd extends ChatState {
+  const ScrollToEnd(List<Message> messages) : super(messages: messages);
 }

@@ -35,7 +35,7 @@ class HerMessageBubble extends StatelessWidget {
 class _ImageBubble extends StatelessWidget {
   final String imageURL;
 
-  const _ImageBubble({super.key, required this.imageURL});
+  const _ImageBubble({required this.imageURL});
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
