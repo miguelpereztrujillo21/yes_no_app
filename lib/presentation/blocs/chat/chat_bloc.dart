@@ -10,7 +10,7 @@ part 'chat_state.dart';
 class ChatBloc extends Bloc<ChatEvent, ChatState> {
   final yesNoRepository = YesNoRepositoryImpl(Dio());
 
-  ChatBloc() : super(ChatInitial([])) {
+  ChatBloc() : super(ChatInitial(const [])) {
     on<SendMessageEvent>((event, emit) async {
       final messages = List<Message>.from(state.messages);
       messages.add(event.message);
